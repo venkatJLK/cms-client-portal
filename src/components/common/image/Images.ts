@@ -5,6 +5,7 @@ import sidebar_logo from "../../../assets/sidebar_logo.png"
 import sidebar_small_logo from "../../../assets/sidebarsmall.svg";
 import sidebar_large_logo from "../../../assets/cms-logo-1.png";
 import login_form_logo from "../../../assets/form_logo.png"
+import report from "../../../assets/report_logo.png";
 
 
 const Images = {
@@ -13,7 +14,8 @@ const Images = {
     sidebar_logo,
     sidebar_small_logo,
     sidebar_large_logo,
-    login_form_logo
+    login_form_logo,
+    report
 };
 
 export default Images;
