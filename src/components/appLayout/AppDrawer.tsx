@@ -32,6 +32,7 @@ const navItems = [
   { label: 'Reports', path: '/report', icon: SmallCloseIcon },
   { label: 'Appointments', path: '/appointments', icon: CalendarIcon },
   { label: 'Doctor', path: '/doctor', icon: CalendarIcon },
+
 ];
 
 export const AppDrawer: React.FC<AppDrawerProps> = ({
@@ -65,7 +66,7 @@ export const AppDrawer: React.FC<AppDrawerProps> = ({
       </Flex>
       <VStack align="stretch" spacing={3} p={4}>
         {navItems.map((item) => {
-          const isActive = location.pathname === item.path;
+          const isActive = location.pathname.startsWith(item.path);
           return (
             <NavLink key={item.label} to={item.path}>
               <Flex
@@ -86,6 +87,7 @@ export const AppDrawer: React.FC<AppDrawerProps> = ({
             </NavLink>
           );
         })}
+
       </VStack>
     </Box>
   );
