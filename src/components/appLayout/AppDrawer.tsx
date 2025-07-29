@@ -19,6 +19,7 @@ import {
 } from '@chakra-ui/icons';
 import { NavLink, useLocation } from 'react-router-dom';
 import Images from '../common/image/Images';
+import "./AppLayoutStyle.css"
 
 interface AppDrawerProps {
   isOpen: boolean;
@@ -49,19 +50,20 @@ export const AppDrawer: React.FC<AppDrawerProps> = ({
       color="white"
       w={{ base: 'full', md: sidebarWidth }}
       h="100vh"
-      p={4}
+
     >
       <Flex justify="center" align="center" mb={8} direction="column">
         <Image
           src={isCollapsed ? Images.sidebar_small_logo : Images.sidebar_logo}
           alt="Logo"
-          h="70px"
-          w={isCollapsed ? '60px' : '400px'}
+          h="84px"
+          w="100%"
           objectFit="contain"
+          className='logo'
           mb={isCollapsed ? 0 : 2}
         />
       </Flex>
-      <VStack align="stretch" spacing={3}>
+      <VStack align="stretch" spacing={3} p={4}>
         {navItems.map((item) => {
           const isActive = location.pathname === item.path;
           return (
