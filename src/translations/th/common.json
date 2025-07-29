@@ -1,0 +1,28 @@
+{
+  "sidebar": {
+    "overview": "ภาพรวม",
+    "patients": "ผู้ป่วย",
+    "appointments": "การนัดหมาย"
+  },
+  "common": {
+    "add": "เพิ่ม",
+    "edit": "แก้ไข",
+    "delete": "ลบ",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "search": "ค้นหา",
+    "name": "ชื่อ",
+    "email": "อีเมล",
+    "phone": "โทรศัพท์",
+    "address": "ที่อยู่",
+    "date": "วันที่",
+    "time": "เวลา",
+    "patient": "ผู้ป่วย",
+    "appointment": "การนัดหมาย",
+    "actions": "การดำเนินการ",
+    "noData": "ไม่มีข้อมูล",
+    "deleteConfirmation": "คุณแน่ใจหรือไม่ว่าต้องการลบรายการนี้?",
+    "yes": "ใช่",
+    "no": "ไม่"
+  }
+}
