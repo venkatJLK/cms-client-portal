@@ -8,6 +8,7 @@ import report_card_1 from "../../../assets/report_1.svg";
 import report_card_2 from "../../../assets/report_2.svg";
 import report_card_3 from "../../../assets/report_3.svg";
 import login_form_logo from "../../../assets/form_logo.png"
+import report from "../../../assets/report_logo.png";
 
 
 const Images = {
@@ -19,7 +20,9 @@ const Images = {
     report_card_1,
     report_card_2,
     report_card_3,
-    login_form_logo
+    login_form_logo,
+    report
+
 };
 
 export default Images;
