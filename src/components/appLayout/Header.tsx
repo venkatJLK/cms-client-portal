@@ -18,8 +18,8 @@ import {
   InfoOutlineIcon,
   ArrowForwardIcon,
   ChevronDownIcon,
-   AtSignIcon,
-   CalendarIcon,
+  AtSignIcon,
+  CalendarIcon,
 } from '@chakra-ui/icons';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase/config';
@@ -148,7 +148,7 @@ export const Header: React.FC<HeaderProps> = ({
             justifyContent="center">
             <Avatar size="md" name="John Doe" color="black" />
           </MenuButton>
-          <MenuList border="2px solid" borderColor="gray.300" shadow={2 }>
+          <MenuList border="2px solid" borderColor="gray.300" shadow={2}>
             <Box px={4} py={3} display="flex" alignItems="center" gap={3}>
               <Avatar name="John Doe" size="sm" />
               <Box>
