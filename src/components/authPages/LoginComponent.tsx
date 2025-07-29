@@ -88,7 +88,7 @@ const LoginComponent: React.FC = () => {
 
     return (
         <Flex height="100vh" direction={{ base: 'column', md: 'row' }}>
-            <Box flex={1} display={{ base: 'none', md: 'block' }}>
+            <Box  display={{ base: 'none', md: 'block' }}>
                 <Image
                     src={Images.login_banner}
                     alt="Doctor Illustration"
@@ -98,30 +98,35 @@ const LoginComponent: React.FC = () => {
                 />
             </Box>
 
-            <Flex
+             <Flex
                 flex={1}
                 bg="white"
                 p={{ base: 6, md: 12 }}
-                align="center"
+                align="start"
                 justify="center"
                 minH="100%"
                 position="relative"
-            >
-                <Box w="100%" maxW="md">
-                    <Flex justify="flex-end" position="absolute" top="4" right="4">
-                        <Menu>
+               >
+                 <Box w="100%" maxW="md">
+                   <Image
+                    height={{ base: "230px", sm: "250px", md: "280px", lg: "280px" }}
+                   src={Images.login_form_logo}
+                   aspectRatio={5 / 4}
+                    />
+                    <Flex justify="flex-end" position="absolute" top={30} right={30}>
+                      <Menu>
                             <MenuButton
-                                as={Box}
-                                px={3}
-                                py={2}
-                                borderRadius="md"
-                                border="1px solid #E2E8F0"
-                                boxShadow="sm"
-                                display="flex"
-                                alignItems="center"
-                                gap={2}
-                                cursor="pointer"
-                                _hover={{ bg: 'gray.50' }}
+                              as={Box}
+                              px={2}
+                              py={2}
+                              borderRadius="md"
+                              border="1px solid #E2E8F0"
+                              boxShadow="sm"
+                              display="flex"
+                              alignItems="center"
+                              gap={2}
+                              cursor="pointer"
+                              _hover={{ bg: 'gray.50' }}
                             >
                                 <Flex align="center" gap="2">
                                     <Image
