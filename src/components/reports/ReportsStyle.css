@@ -1,0 +1,106 @@
+.reportContainer{
+    background: #F4F6FA;
+    color: #000;
+    overflow: "hidden";
+    padding: 20px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.expandText {
+    color: #a28f60;
+    font-size: var(--font-size-14);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.fullScreenIcon {
+    border: 1px solid #a28f60;
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 18px;
+} 
+
+.reportImage {
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    object-fit: contain;
+}
+
+.reportDescription {
+    border-radius: 12px;
+    padding: 16px;
+    height: 230px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa transparent;
+}
+
+.carouselWrapper {
+    position: relative;
+    overflow: visible;
+    align-items: center;
+}
+
+.leftArrow,
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f4f9ff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.leftArrow {
+    left: 7px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.rightArrow {
+    right: 7px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.reportCardContainer {
+    margin: 0 !important;
+    overflow: hidden;
+    min-height: 670px;
+    border-radius: 10px;
+}
+
+.modalReportImage {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.actionIcon {
+  cursor: pointer;
+  object-fit: contain;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.actionIcon:hover {
+  transform: scale(1.1);
+}

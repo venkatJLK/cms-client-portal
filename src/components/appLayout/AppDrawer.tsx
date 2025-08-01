@@ -1,4 +1,3 @@
-
 import {
   Box,
   Drawer,
@@ -9,17 +8,10 @@ import {
   useBreakpointValue,
   Image,
   Flex,
-} from '@chakra-ui/react';
-import {
-  ViewIcon,
-  InfoIcon,
-  CalendarIcon,
-  TimeIcon,
-  SmallCloseIcon,
-} from '@chakra-ui/icons';
-import { NavLink, useLocation } from 'react-router-dom';
-import Images from '../common/image/Images';
-import "./AppLayoutStyle.css"
+} from "@chakra-ui/react";
+import { NavLink, useLocation } from "react-router-dom";
+import Images from "../common/image/Images";
+import "./AppLayoutStyle.css";
 
 interface AppDrawerProps {
   isOpen: boolean;
@@ -28,11 +20,30 @@ interface AppDrawerProps {
 }
 
 const navItems = [
-  { label: 'Profile', path: '/profile', icon: InfoIcon },
-  { label: 'Reports', path: '/report', icon: SmallCloseIcon },
-  { label: 'Appointments', path: '/appointments', icon: CalendarIcon },
-  { label: 'Doctor', path: '/doctor', icon: CalendarIcon },
-
+  {
+    label: "Profile",
+    path: "/profile",
+    activeIcon: Images.active_profile,
+    inactiveIcon: Images.inactive_profile,
+  },
+  {
+    label: "Reports",
+    path: "/report",
+    activeIcon: Images.active_report,
+    inactiveIcon: Images.inactive_report,
+  },
+  {
+    label: "Appointments",
+    path: "/appointments",
+    activeIcon: Images.active_appointment,
+    inactiveIcon: Images.inactive_appointment,
+  },
+  {
+    label: "Doctor",
+    path: "/doctor",
+    activeIcon: Images.active_doctor,
+    inactiveIcon: Images.inactive_doctor,
+  },
 ];
 
 export const AppDrawer: React.FC<AppDrawerProps> = ({
@@ -81,7 +92,12 @@ export const AppDrawer: React.FC<AppDrawerProps> = ({
                 fontWeight={isActive ? 'semibold' : 'normal'}
                 _hover={{ bg: isActive ? 'white' : 'whiteAlpha.300' }}
               >
-                <item.icon />
+                <Image
+                  src={isActive ? item.activeIcon : item.inactiveIcon}
+                  alt={`${item.label} icon`}
+                  boxSize="24px"
+                  objectFit="contain"
+                />
                 {!isCollapsed && <Text fontSize="md">{item.label}</Text>}
               </Flex>
             </NavLink>
